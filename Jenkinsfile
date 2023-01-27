@@ -8,7 +8,7 @@ pipeline {
 
     stages {
         stage('Cloning Git') {
-            git([url: 'https://github.com/ranjitdas977/jenkinspractice.git', branch:'main', credentialsID: 'jenkin_github_ssh'])
+            git([url: 'git@github.com:ranjitdas977/jenkinspractice.git', branch:'main', credentialsID: 'jenkin_github_ssh'])
         }
     }
     stage('Building imgae') {
